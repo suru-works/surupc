@@ -1,0 +1,22 @@
+pasos:
+-instalar nodejs
+https://nodejs.org/es/download/
+    sudo apt-get install nodejs
+    sudo apt-get install npm
+
+-instalar express
+    npm install express --save
+
+-generar el esqueleto del proyecto
+    instalar el generador
+        npm install express-generator -g
+    generar
+        express --view=pug surupc
+    instalar dependencias(correr en la ruta del proyecto)
+        npm install
+
+-correr el proyecto (express, por defecto corre en el localhost en el puerto 3000)
+    linux
+        DEBUG=myapp:* npm start
+    windows ( se tiene que correr en cmd no en powershell)
+        set DEBUG=myapp:* & npm start
