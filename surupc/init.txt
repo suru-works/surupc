@@ -1,0 +1,25 @@
+pasos:
+-instalar python 
+sudo apt-get install python3.7
+
+-instalar pip:
+sudo apt-get install python3-pip
+
+-instalar django
+sudo pip install django
+
+-clonar el repositorio
+git clone https://github.com/suru-works/surupc.git
+
+-instalar apache
+sudo apt install apache2
+
+    permitir apache en el firewall
+     sudo ufw allow 'Apache'    
+    
+    isntalar apache dev 
+     sudo apt install apache2-dev
+
+    instalar el modulo de apache para django
+     wget https://github.com/GrahamDumpleton/mod_wsgi/archive/4.6.5.tar.gz
+     sudo tar xvfz 4.6.5.tar.gz

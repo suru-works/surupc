@@ -20,3 +20,17 @@ https://nodejs.org/es/download/
         DEBUG=myapp:* npm start
     windows ( se tiene que correr en cmd no en powershell)
         set DEBUG=myapp:* & npm start
+
+-direccionamiento basico
+    app.METHOD(PATH, HANDLER)
+    donde:
+        app es una instancia de express.
+        METHOD es un método de solicitud HTTP.
+        PATH es una vía de acceso en el servidor.
+        HANDLER es la función que se ejecuta cuando se correlaciona la ruta.
+
+-servicio de archivos estaticos en express
+    app.use(express.static('public'));
+    ----(basicamente esto hace que se pueda utilizar todo archivo que este dentro de la carpeta public)
+    app.use('/static', express.static('public'));
+
